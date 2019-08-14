@@ -1,0 +1,32 @@
+.btn{
+    display: block;
+    height: 40px;
+    width: 80px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.btn .text{
+    z-index: 2;
+    position: relative;
+}
+.btn .circle{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background:#5a005a;
+    opacity: 0.6;
+    position: absolute;
+    animation: change 1s forwards;
+    z-index: 1;
+}
+
+@keyframes change{
+    from{
+        transform: scale(0.1)
+    }
+    to{
+        transform: scale(10)
+    }
+}
